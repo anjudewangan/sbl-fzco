@@ -2305,6 +2305,7 @@ p {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  text-align: justify;
 }
 
 ul {
@@ -5812,7 +5813,7 @@ blockquote {
 
   .service-whole-wrap {
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-row-gap: 10px;
     flex-direction: column;
     align-items: stretch;
   }
@@ -6487,8 +6488,8 @@ blockquote {
   }
 
   .service-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .section-title {
@@ -6510,7 +6511,7 @@ blockquote {
   }
 
   .about-section {
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
 
   .service-image-wrap {
@@ -6559,7 +6560,7 @@ blockquote {
   }
 
   .work-section {
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
 
   .container-large {
@@ -6576,8 +6577,8 @@ blockquote {
   }
 
   .testimonial-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .testimonial-mask {
@@ -6602,8 +6603,8 @@ blockquote {
   }
 
   .features-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .features-dark-bg {
@@ -6642,8 +6643,8 @@ blockquote {
   }
 
   .contact-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .contact-grid {
@@ -6671,8 +6672,8 @@ blockquote {
   }
 
   .blog-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .container-small {
@@ -7077,12 +7078,13 @@ blockquote {
   }
 
   .header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .header-link-block {
     justify-content: flex-start;
+    display: none;
   }
 
   .nav-social-media-wrap {
@@ -7231,12 +7233,12 @@ blockquote {
   }
 
   .page-link-wrap {
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .banner-section {
-    padding-top: 150px;
-    padding-bottom: 80px;
+    padding-top: 110px;
+    padding-bottom: 40px;
   }
 
   .section-title {
@@ -7245,7 +7247,7 @@ blockquote {
 
   .service-grid {
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-row-gap: 10px;
   }
 
   .service-card {
@@ -7258,7 +7260,7 @@ blockquote {
   }
 
   .service-title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .home-service-icon-wrap {
@@ -7277,14 +7279,14 @@ blockquote {
 
   .about-points-wrap {
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 5px;
     flex-direction: column;
   }
 
-  .about-list {
+  /* .about-list {
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 
   .about-point {
     font-size: 20px;
@@ -7320,7 +7322,7 @@ blockquote {
   }
 
   .testimonial-slider {
-    padding-bottom: 70px;
+    padding-bottom: 10px;
   }
 
   .testimonial-left-arrow-wrap {
@@ -7359,7 +7361,8 @@ blockquote {
 
   .features-icon-list {
     grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    grid-row-gap: 5px;
+    margin-top: 20px;
   }
 
   .features-points-wrap {
@@ -7388,7 +7391,7 @@ blockquote {
   }
 
   .contact-grid {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .contact-input-type {
@@ -7408,11 +7411,11 @@ blockquote {
   }
 
   .partners-grid {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
 
   .partners-card {
-    min-height: 180px;
+    min-height: 100px;
   }
 
   .blog-whole-wrap {
@@ -7790,6 +7793,27 @@ blockquote {
   .project-video-wrap {
     min-height: 250px;
   }
+
+  .copyright-text {
+    font-size: 15px;
+  }
+
+  .order-last {
+    -ms-flex-order: 13;
+    order: 13;
+  }
+
+  .title-hide-res {
+    display: none !important;
+  }
+
+  .title-hide-desk {
+    display: block !important;
+    margin: 0 15px;
+  }
+  .home-service-icon-wrap{
+    align-items: center;
+  }
 }
 
 #w-node-_25b1d96b-48b2-f411-8c70-abd01862a98d-5e9a6959,
@@ -7917,6 +7941,19 @@ blockquote {
 
   #w-node-_1a03c1d7-10ce-f356-ab94-97121185ed89-1185ed6e,
   #w-node-_1a03c1d7-10ce-f356-ab94-97121185ed9a-1185ed6e {
-    grid-area: span 1 / span 2 / span 1 / span 2;
+    /* grid-area: span 1 / span 2 / span 1 / span 2; */
+    text-align: center;
   }
+}
+
+.blog-listing p {
+  color: #1c1f35;
+}
+
+.title-hide-res {
+  display: block;
+}
+
+.title-hide-desk {
+  display: none;
 }
